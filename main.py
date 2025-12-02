@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from config import APP_NAME, APP_VERSION
-from routes import huespedes, hoteles, habitaciones, agencias, servicios, categorias, tipos_habitacion
+from routes import huespedes, hoteles, habitaciones, agencias, servicios, categorias, tipos_habitacion, reservas, registro_hospedaje
 
 # Crear aplicación
 app = FastAPI(
