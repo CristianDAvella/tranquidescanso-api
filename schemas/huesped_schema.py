@@ -9,7 +9,7 @@ class HuespedBase(BaseModel):
     tipo_id: str  # "Cédula", "Pasaporte", "RUT", "Tarjeta de Identidad"
     nombre: str
     direccion: str
-    email: Optional[str] = None  # Campo adicional del mockup
+
 
 class HuespedCreate(HuespedBase):
     telefonos: List[str] = []  # Lista de teléfonos a crear
@@ -17,7 +17,7 @@ class HuespedCreate(HuespedBase):
 class HuespedUpdate(BaseModel):
     nombre: Optional[str] = None
     direccion: Optional[str] = None
-    email: Optional[str] = None
+
 
 class HuespedResponse(HuespedBase):
     telefonos: List[str]
