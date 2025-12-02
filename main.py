@@ -23,6 +23,13 @@ app.add_middleware(
 app.include_router(huespedes.router)
 app.include_router(hoteles.router)
 app.include_router(habitaciones.router)
+app.include_router(agencias.router)
+app.include_router(servicios.router)
+app.include_router(categorias.router)
+app.include_router(tipos_habitacion.router)
+app.include_router(reservas.router)
+app.include_router(registro_hospedaje.router)
+
 
 @app.get("/")
 def root():
